@@ -13,7 +13,7 @@ The following animation shows the web application's appearance and functionality
 
 And the web application can be found here: 
 
-Insert Link to website
+https://jordynnmancini.github.io/jordyn-mancini-portfolio-homework-2/
 
 
 ## The Process
