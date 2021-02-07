@@ -9,11 +9,11 @@ Using the skills I have learned in this course so far, I have created a Web-base
 
 The following animation shows the web application's appearance and functionality:
 
-<!-- ![portfolio demo](./Assets/02-advanced-css-homework-demo.gif) -->
+![portfolio demo](./assets/website.gif)
 
 And the web application can be found here: 
 
-<!-- Insert Link to website -->
+Insert Link to website
 
 
 ## The Process
