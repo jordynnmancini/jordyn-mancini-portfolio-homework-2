@@ -56,7 +56,6 @@ nav ul li a {
 
 nav ul li a:hover {
     border-color: var(--fadedpink);
-    color: var(--supple);
 }
 
 .header-image {
@@ -97,6 +96,7 @@ main {
 #AboutMeSection {
     clear: both; 
     display: flex;  
+
 }
 
 .title {
@@ -118,6 +118,7 @@ main {
     display: inline-flex; 
     margin-left: 15px;
     margin-top: 40px; 
+
 }
 
 .parent { 
@@ -133,9 +134,19 @@ main {
     .div4 { grid-area: 4 / 1 / 5 / 2; } 
     .div5 { grid-area: 4 / 2 / 5 / 3; } 
 
-
+.content .parent img {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+   
+    
+}
+    
 .div1 a, .div2 a, .div3 a, .div4 a, .div5 a {
-        position: relative; 
+        position: relative;   
 }
 
 .text-block {
@@ -151,3 +162,99 @@ main {
     font-size: 110%; 
     padding-left: 5%; 
 }
+
+.content .parent a:hover {
+    filter: grayscale(80%); 
+}
+
+.content .parent a:active {
+    filter: grayscale(80%) blur(5px); 
+}
+
+#ContactMeSection {
+    display: inline-flex;
+    margin-top: 40px; 
+    margin-left: -35px; 
+    align-items: center;
+}
+
+.contact-me-content {
+    margin-left: 30px; 
+    justify-content: space-between; 
+}
+
+.contact-me-content ul {
+    margin-left: 50px;
+}
+
+.contact-me-content ul li {
+    display: inline;
+    margin: 14px; 
+    font-size: 23px;
+}
+
+.contact-me-content ul li a {
+    color: var(--supple); 
+   
+  }
+  
+.contact-me-content ul li a:hover {
+    color: var(--blackish); 
+}
+
+.contact-me-content ul li a:active {
+    color: var(--blackish); 
+    font-size: 105%;
+}
+
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+    .main-header {
+      display: flex; 
+      flex-direction: column;
+    }
+    .main-header .Name {
+       padding: 10px;    
+       margin-bottom: 20px;     
+    }
+    nav ul {
+        margin-bottom: 20px;
+    }
+    .contact-me-content {
+        margin-left: -40px; 
+    }
+    .contact-me-content ul li a {
+        font-size: 15px;
+    }
+  }
+  
+/* Large smartphones */
+@media screen and (max-width: 768px) {
+    .text-block {
+      font-size: 50%;
+      padding-left: 10px; 
+    }
+    .text-block:hover {
+        font-size: 55%; 
+        padding-left: 10%; 
+    }
+    .contact-me-content {
+        margin-left: 10px; 
+    }
+    .contact-me-content ul {
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+    }
+  }
+  
+  /* Small smartphones */
+  @media screen and (max-width: 576px) {
+    .header-image h1 {
+      font-size: 90%;
+    }
+    .contact-me-content {
+        margin-left: -90px; 
+    }
+  }
